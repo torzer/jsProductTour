@@ -55,8 +55,8 @@ Script example to start a tour:
     var steps = [
         {
             wellcome: true,
-            intro: "Wellcome, this slide is allways showed and no version is needed because
-                it is set as a 'wellcome' slide."
+            intro: "Wellcome, this slide is allways showed and no version is needed because \n\
+                it is set as a 'wellcome' slide. This slide is not linked with any HTML element."
         },
         {
             bye: true,
@@ -64,22 +64,18 @@ Script example to start a tour:
         },
         {
             version: 20170627.01,
-            element: "#links-ajuda",
-            intro: "Para uma visão geral de uso do sistema, acesse um dos links de ajuda."
+            element: "#id-element",
+            intro: "This is a slide that is gonna be showed next linked element."
         },
         {
             version: 20170627.02,
-            element: "#titulo-periodo-trabalho",
-            intro: "A partir desta versão iniciaremos o trabalho de planejamento dos próximos períodos do PDI\n\
-                                    , portanto, para identificar o <strong>período</strong> em que você está trabalhando, ele será fixado nesta área em \n\
-                                    todas as janelas do sistema."
+            element: "#another",
+            intro: "Another slide with news related to the another element."
         },
         {
             version: 20170627.03,
-            element: "#menu-encerramento-periodo",
-            intro: "Neste momento estamos na 2<sup>a</sup> etapa destinada a análise e finalização do período 2013-2017, \n\
-                    acesse o menu <em>Encerramento do Período</em> para \n\
-                    entrar com as considerações a respeito do PDI."
+            element: "#last-one",
+            intro: "Last slide showed."
         },
     ];
 
