@@ -1,24 +1,25 @@
 {
-    "name": "jsProductTour",
-    "authors": [
-        "Ademir Mazer Junior <mazer@torzer.com>",
-        "Oseas Tormen <tormen@torzer.com>"
-    ],
-    "description": "Introjs product tour manager based on cookies to show news to the user."
-    "license": "MIT",
-    "ignore": [
-        ".jshintrc",
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-        "**/*.txt"
-    ],
-    "dependencies": {
-        "intro.js": "^2.5.0",
-        "js-cookie": "^2.1.4"
-    },
-    "devDependencies": {
-    }
+  "name": "jsProductTour",
+  "homepage": "https://github.com/torzer/jsProductTour",
+  "authors": [
+    "Ademir Mazer Junior <mazer@torzer.com>"
+  ],
+  "description": "Introjs product tour manager based on cookies to show news to the user.",
+  "main": "",
+  "keywords": [
+    "introjs",
+    "js-cookie-tour-product-tour"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "intro.js": "^2.5.0",
+    "js-cookie": "^2.1.4"
+  }
 }
