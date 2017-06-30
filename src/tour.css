@@ -1,0 +1,14 @@
+/*
+    Created on : 27/06/2017, 19:39:46
+    Author     : Ademir Mazer Jr <mazer@torzer.com>
+*/
+
+.highlight-tour-element {
+    background-color: palegoldenrod;
+}
+
+.tour-custom {
+    max-width: 100%;
+    min-width: 350px;
+    padding: 1.5em;
+}
