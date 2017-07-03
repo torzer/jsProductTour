@@ -4,7 +4,7 @@
  * @author Ademir Mazer Junior <mazer@torzer.com>
  */
 
-if (typeof extendObj === undefined ) {
+if (typeof extendObj === undefined || typeof extendObj === 'undefined') {
     function extendObj(obj, src) {
         for (var key in src) {
             if (src.hasOwnProperty(key))
