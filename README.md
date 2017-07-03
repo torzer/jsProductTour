@@ -83,3 +83,75 @@ Script example to start a tour:
 
     tour.start();
 ```
+
+### Laravel use example
+
+At your layout master:
+
+```html
+        <!-- HEAD SECTION -->
+
+        <!-- TOUR -->
+        <link rel="stylesheet" href="{{asset('bower_components/intro.js/minified/introjs.min.css')}}">
+        <link rel="stylesheet" href="{{asset('bower_components/intro.js/themes/introjs-flattener.css')}}">
+        <link rel="stylesheet" href="{{asset('bower_components/js-product-tour/src/tour.css')}}">
+
+        <!-- BEFORE END BODY -->
+
+        <!-- TOUR -->
+        <script src="{{ asset ("/bower_components/intro.js/minified/intro.min.js")}}"></script>
+        <script src="{{ asset ("/bower_components/js-cookie/src/js.cookie.js")}}"></script>
+        <script src="{{ asset ("/bower_components/js-product-tour/src/tour.js")}}"></script>
+        
+        <!-- This is a script of your application with steps configuration -->
+        <script src="{{ asset ("/js/showTour.js")}}"></script>
+
+        <!-- execute after document is ready, if using jQuery -->
+        <script>
+            $(document).ready(function(){
+                @if(Auth::check())
+                    showTour("{{Auth::user()->email}}");
+                @endif
+            });
+        </script>        
+```
+
+The `public/js/showTour.js` 
+
+```js
+
+function showTour(user) {
+    var steps = [
+        {
+            wellcome: true,
+            intro: "Wellcome, this slide is allways showed and no version is needed because \n\
+                it is set as a 'wellcome' slide. This slide is not linked with any HTML element."
+        },
+        {
+            bye: true,
+            intro: "This is also allways showed, but as the last slide!"
+        },
+        {
+            version: 20170627.01,
+            element: "#id-element",
+            intro: "This is a slide that is gonna be showed next linked element."
+        },
+        {
+            version: 20170627.02,
+            element: "#another",
+            intro: "Another slide with news related to the another element."
+        },
+        {
+            version: 20170627.03,
+            element: "#last-one",
+            intro: "Last slide showed."
+        },
+    ];
+
+    var tour = new Tour(user, steps);
+
+    tour.start();
+}
+
+```
+
