@@ -25,7 +25,7 @@ Then run
 
 This will install _jsProductTour_ and its own dependencies, wich are introjs and js-cookie.
 
-## Configuring
+## Configuring the installation
 
 You must import in HTML code the js and css source files of introjs, js-cookie and jsProductTour.
 The following example is based on a local project, you must change the paths according your project installation:
@@ -154,4 +154,14 @@ function showTour(user) {
 }
 
 ```
+
+## Step setting
+
+You must see the intro.js documentation (http://introjs.com/) to understand qich options can be set to steps.
+
+Beside the into.js settings, this package use:
+
+* **wellcome** and **bye**: optional boolean settings to define the first and last slide of the tour;
+* **version**: required number setting to define the version that is used to evaluate if the slide must be shown to the user. 
+You must allways increase this number to new slides, and can erase the oldest slides when believe they are not necessary anymore.
 
