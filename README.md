@@ -34,12 +34,12 @@ The following example is based on a local project, you must change the paths acc
     <!-- CSS -->
     <link rel="stylesheet" href="bower_components/intro.js/minified/introjs.min.css">
     <link rel="stylesheet" href="bower_components/intro.js/themes/introjs-flattener.css">
-    <link rel="stylesheet" href="css/tour.css">
+    <link rel="stylesheet" href="bower_components/js-product-tour/src/tour.css">
 
     <!-- JS -->
     <script src="bower_components/intro.js/minified/intro.min.js"></script>
     <script src="bower_components/js-cookie/src/js.cookie.js"></script>
-    <script src="js/tour.js"></script>
+    <script src="bower_components/js-product-tour/src/tour.js"></script>
 ```
 
 ## Using
