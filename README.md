@@ -5,6 +5,12 @@ based on cookies to control when and what already was presented to the user.
 
 ## Instalation
 
+### npm
+
+```bash
+npm install js-product-tour --save
+```
+
 ### Bower
 
 Put the package information in the dependencies section of the bower.json file.
