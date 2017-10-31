@@ -1,0 +1,26 @@
+{
+
+  "homepage": "https://github.com/torzer/jsProductTour",
+  "license": "MIT",
+  "name": "js-product-tour",
+  "author": {
+    "name": "Ademir Mazer Jr",
+    "email": "mazer@torzer.com",
+    "url": "https//torzer.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/torzer/jsProductTour.git"
+  },
+  "keywords": [
+    "product",
+    "tour",
+    "introjs"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "intro.js": "^2.5.0",
+    "js-cookie": "^2.1.4"
+  },
+  "version": "1.0.1"
+}
